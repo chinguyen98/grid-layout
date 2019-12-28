@@ -16,6 +16,20 @@ nav{
     align-items: center;
 }
 
+footer{
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    height: 3.5rem;
+    width: 100%;
+}
+
+footer span{
+    font-size: 3rem;
+    float: right;
+    margin-right: 2rem;
+}
+
 .brand{
     text-align: left;
     width: fit-content;
