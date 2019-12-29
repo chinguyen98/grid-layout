@@ -11,6 +11,28 @@ li{
     list-style-type: none;
 }
 
+main{
+    display: grid;
+    grid-gap: 5px;
+    grid-template-columns: repeat(auto-fit, minmax(15rem, 1fr));
+    grid-auto-rows: 15rem;
+    grid-auto-flow: dense;
+}
+
+main div{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 2em;
+    color: red;
+}
+
+main div img{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
 nav{
     display: flex;
     align-items: center;
@@ -22,6 +44,7 @@ footer{
     left: 0;
     height: 3.5rem;
     width: 100%;
+    z-index: 999;
 }
 
 footer span{
@@ -42,6 +65,15 @@ footer span{
     letter-spacing: 0.3rem;
 }
 
+.horizontal{
+    grid-column: span 2;
+}
+
+.large{
+    grid-column: span 2;
+    grid-row: span 2;
+}
+
 .menu ul{
     display: flex;
     flex-direction: row;
@@ -60,4 +92,13 @@ footer span{
 
 .menu a:hover{
     text-decoration: underline;
+}
+
+.normal{
+    grid-row: span 1;
+    grid-column: span 1;
+}
+
+.vertical{
+    grid-row: span 2;
 }
